@@ -13,3 +13,6 @@ Login email and password are constrained to 'test@email.com' and 'password' to s
 You can change it on index.php. If you are changing decrypt message make sure you do the same on the method
 loginEncryption in login_screenv3.dart
 
+Author
+Lionel
+
