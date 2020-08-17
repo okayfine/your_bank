@@ -1,6 +1,5 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-
 import 'indicator.dart';
 
 class PieChartExample extends StatefulWidget {
@@ -14,7 +13,7 @@ class PieChart2State extends State {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 1.3,
+      aspectRatio: 1.4,
       child: Card(
         color: Colors.white,
         child: Row(

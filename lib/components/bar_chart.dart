@@ -1,11 +1,11 @@
-import 'dart:async';
-import 'dart:math';
-
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:your_bank/utilities/constants.dart';
+import 'dart:async';
+import 'dart:math';
 
 class BarChartExample extends StatefulWidget {
+  // create bar colors for animation
   final List<Color> availableColors = [
     Colors.purpleAccent,
     Colors.yellow,
@@ -22,13 +22,16 @@ class BarChartExample extends StatefulWidget {
 class BarChartExampleState extends State<BarChartExample> {
   final Color barBackgroundColor = const Color(0xff72d8bf);
   final Duration animDuration = const Duration(milliseconds: 250);
+  // Find which bar has been touched
   int touchedIndex;
 
+  // Control animation
   bool isPlaying = false;
 
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
+      // Aspect Radio of 3/2 is more optimum
       aspectRatio: 1,
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
